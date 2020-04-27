@@ -21,6 +21,17 @@ git clone https://github.com/404-ghost/symbiote
 cd symbiote
 python3 symbiote.py
 ```
+## step 3:
+after you got your cam file:
+```
+cd symbiote
+cd CapturedData 
+```
+In termux u want to open the cam file :
+```
+ls
+termux-open <file_name>
+```
 # PREREQUISITES: ( Please verify if you have installed )
 * Python 3
 * PHP
