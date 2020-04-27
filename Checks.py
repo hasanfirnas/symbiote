@@ -43,7 +43,7 @@ def checkNgrok():
         print(' {0}[{2}*{0}]{2} Ngrok Not Found {0}!!'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         print(' {0}[{2}*{0}]{2} Downloading Ngrok...{5}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         if 'Android' in str(check_output(('uname', '-a'))) or 'arm' in str(check_output(('uname', '-a'))):
-            filename = 'ngrok-stable-linux-arm.zip'
+            filename = 'ngrok-stable-linux-arm64.zip'
             url = 'https://bin.equinox.io/c/4VmDzA7iaHb/' + filename
             req=system('wget {0}'.format(url))
             #with open(filename, "wb") as file_obj:
@@ -78,7 +78,7 @@ def checkLocalxpose():
         print(' {0}[{2}*{0}]{2} Localxpose Not Found {0}!!'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         print(' {0}[{2}*{0}]{2} Downloading Localxpose...{5}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         if 'Android' in str(check_output(('uname', '-a'))) or 'arm' in str(check_output(('uname', '-a'))):
-            filename = 'loclx-linux-arm.zip'
+            filename = 'loclx-linux-arm64.zip'
             url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
             req=system('wget {0}'.format(url))
             #with open("{0}", "wb".format(filename)) as file_obj:
