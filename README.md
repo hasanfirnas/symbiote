@@ -1,4 +1,6 @@
-# symbiote
+#<p align="center">
+  TO BE USED FOR EDUCATIONAL PURPOSES ONLY
+</p>
 
 # AVAILABLE TUNNELLING OPTIONS**
 1) LOCALXPOSE (https://localxpose.io)
@@ -36,7 +38,3 @@ python3 symbiote.py
 # SCREENSHOT (android-termux):
 ![Shot](https://imgur.com/qpTDw8n.png)
 
-## DISCLAIMER:
-<p align="center">
-  #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
-</p>
