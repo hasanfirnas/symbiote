@@ -12,7 +12,7 @@
 * jp2a
 # SCREENSHOT (Kali-linux):
 #1![Shot](https://imgur.com/bwoNzdA.png)
-#2![Shot](https://imgur.com/UcebCtK.png)
+#2![Shot](https://imgur.com/kBiCDpP.png)
 
 ## DISCLAIMER:
 <p align="center">
