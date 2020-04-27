@@ -9,10 +9,10 @@
 # Installing (Kali Linux/Termux):
 ## step 1 (install this before you start):
 ```
-sudo apt update && upgrade
-sudo apt-get install python
-sudo apt-get install wget
-sudo apt-get install php
+apt update && upgrade
+apt-get install python
+apt-get install wget
+apt-get install php
 ```
 ## step 2:
 ```
@@ -34,7 +34,6 @@ termux-open <file_name>
 # PREREQUISITES:
 * Python 3
 * PHP
-* sudo
 * wget
 
 # VIDEO (step by step command):
