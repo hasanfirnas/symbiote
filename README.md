@@ -11,7 +11,6 @@
 ```
 sudo apt update && upgrade
 sudo apt-get install python
-sudo apt-get install jp2a 
 sudo apt-get install wget
 sudo apt-get install php
 ```
@@ -37,7 +36,6 @@ termux-open <file_name>
 * PHP
 * sudo
 * wget
-* jp2a
 
 # VIDEO (step by step command):
 [![Watch the video](https://imgur.com/MmYQQfW.png)](https://youtu.be/vt5fpE0bzSY)
