@@ -32,8 +32,7 @@ python3 symbiote.py
 [![Watch the video](https://imgur.com/MmYQQfW.png)](https://youtu.be/vt5fpE0bzSY)
 
 # SCREENSHOT (Kali-linux):
-#1![Shot](https://imgur.com/bwoNzdA.png)
-#2![Shot](https://imgur.com/kBiCDpP.png)
+![Shot](https://imgur.com/kBiCDpP.png)
 
 # SCREENSHOT (android-termux):
 ![Shot](https://imgur.com/qpTDw8n.png)
