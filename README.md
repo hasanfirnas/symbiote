@@ -7,7 +7,7 @@
 2) SERVEO (https://serveo.net/)
 3) NGROK (https://ngrok.com/)
 # Installing (Kali Linux/Termux):
-## step 1(*install this before you start):
+## step 1(install this before you start):
 ```
 sudo apt update && upgrade
 sudo apt-get install python
@@ -22,12 +22,12 @@ cd symbiote
 python3 symbiote.py
 ```
 ## step 3:
-###after you got your cam file:
+### After you got your cam file:
 ```
 cd symbiote
 cd CapturedData 
 ```
-###In termux u want to open the cam file :
+### In termux u want to open the cam file :
 ```
 ls
 termux-open <file_name>
