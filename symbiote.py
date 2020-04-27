@@ -265,6 +265,7 @@ def report(url,port):
             system('clear')
             system('cat Server/{0}/ip.txt >> CapturedData/ip.txt'.format(name))
             fresh()
+            global user
             if user == 1:
                 android_end()
             else:
