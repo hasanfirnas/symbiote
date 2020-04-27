@@ -5,7 +5,7 @@ import subprocess
 import ctypes
 import sys
 import os
-import requests 
+#import requests 
 import urllib
 #from urllib import urlopen
 from os import system, getuid, path
