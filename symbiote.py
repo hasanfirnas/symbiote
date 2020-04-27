@@ -40,14 +40,14 @@ def div_q():
           android_banner()
           user=1
           sleep(7)
-          checkjp2a()
+          #checkjp2a()
           checkPHP()
           checkNgrok()
           checkLocalxpose()
     else:
         banner()
         sleep(7)
-        checkjp2a()
+        #checkjp2a()
         checkPHP()
         checkNgrok()
         checkLocalxpose()
