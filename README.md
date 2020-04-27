@@ -19,7 +19,7 @@ git clone https://github.com/404-ghost/symbiote
 cd symbiote
 python3 symbiote.py
 ```
-### PREREQUISITES: ( Please verify if you have installed )
+# PREREQUISITES: ( Please verify if you have installed )
 * Python 3
 * PHP
 * sudo
@@ -28,6 +28,7 @@ python3 symbiote.py
 
 # VIDEO (step by step command):
 [![Watch the video](https://imgur.com/MmYQQfW.png)](https://youtu.be/vt5fpE0bzSY)
+
 # SCREENSHOT (Kali-linux):
 #1![Shot](https://imgur.com/bwoNzdA.png)
 #2![Shot](https://imgur.com/kBiCDpP.png)
