@@ -32,7 +32,7 @@ cd CapturedData
 ls
 termux-open <file_name>
 ```
-# PREREQUISITES: ( Please verify if you have installed )
+# PREREQUISITES:
 * Python 3
 * PHP
 * sudo
