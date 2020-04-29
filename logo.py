@@ -172,19 +172,19 @@ def end():
                                                                                               {5}|{4}
                                                                                               {5}|{4}
                                                                                               {5}|{4}
-                                       {2}'cdxOOkdl,{4}                                             {5}|{4}                .                          {0}<Symbiote> {5}BY: {0}404-ghost
-                                    {2}.lKMMMMMMMMMMXd.{4}                                          {5}|{4}                .                       
-                                   {2}lNMMMMMMMMMMNXXNNo{4}                                         {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}IF YOU LIKE THIS TOOL, THEN PLEASE HELP TO BECOME BETTER.       
-                                 {2}'0MMMMMMMNkl,..   .'.{4}                                        {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}PLEASE LET ME KNOW , IF ANY PROBLEM IN THIS. 
-                                {2}oWMMMMMMO;{4}                                                    {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}MAKE PULL REQUEST, LET US KNOW YOU SUPPORT US. 
-                              {2}.OMMMMMMK;{4}                                                      {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}IF YOU HAVE ANY IDEA, THEN JUST LET ME KNOW .   
-                             {2}.0MMMMMWd{4}                                                        {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}PLEASE DON'T HARM ANYONE , IT'S ONLY FOR EDUCATIONAL PURPOSE.
-                            {2}.KMMMMMX; .';:cc:;,..{4}                                             {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.  
-                           {2}.XMMMMMWkOXWMMMMMMMMMWXOo;.{4}                                        {5}|{4}                .      {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
-                          {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMW0o'{4}                                     {5}|{4}                .       
-                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                .                   {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
-                        {2},NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO,{4}                                 {5}|{4}                .                  
-                       {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                .                {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._
+                                       {2}'cdxOOkdl,{4}                                             {5}|{4}                                          {0}<Symbiote> {5}BY: {0}404-ghost
+                                    {2}.lKMMMMMMMMMMXd.{4}                                          {5}|{4}                                       
+                                   {2}lNMMMMMMMMMMNXXNNo{4}                                         {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}IF YOU LIKE THIS TOOL, THEN PLEASE HELP TO BECOME BETTER.       
+                                 {2}'0MMMMMMMNkl,..   .'.{4}                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}PLEASE LET ME KNOW , IF ANY PROBLEM IN THIS. 
+                                {2}oWMMMMMMO;{4}                                                    {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}MAKE PULL REQUEST, LET US KNOW YOU SUPPORT US. 
+                              {2}.OMMMMMMK;{4}                                                      {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}IF YOU HAVE ANY IDEA, THEN JUST LET ME KNOW .   
+                             {2}.0MMMMMWd{4}                                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}PLEASE DON'T HARM ANYONE , IT'S ONLY FOR EDUCATIONAL PURPOSE.
+                            {2}.KMMMMMX; .';:cc:;,..{4}                                             {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.  
+                           {2}.XMMMMMWkOXWMMMMMMMMMWXOo;.{4}                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
+                          {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMW0o'{4}                                     {5}|{4}                       
+                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                                   {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
+                        {2},NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO,{4}                                 {5}|{4}                                  
+                       {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                                {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._
                      {2},0MMMMMMMMMMMMMMMWXOkxMMkllllodxOMMMMMMMMWd.{4}                             {5}|{4}
             {2}.dc;'';lOWMMMMMMMMMMMMMMMc.   {6}{0}.WM,{4}      {2};KMMMMMMMMMMK'{4}                            {5}|{4}        
              {2}cWMMMMMMMMMMMMMMMMM0c,{6}{0}WMo    oMW.{4}     {2}dWMMMMMMN0OOOKK,{4}                           {5}|{4}
