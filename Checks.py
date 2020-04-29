@@ -1,6 +1,6 @@
 import subprocess
 import ctypes
-#import requests 
+import requests 
 import urllib
 #from urllib import urlopen
 from os import system, getuid, path
@@ -9,8 +9,9 @@ from platform import system as systemos, architecture
 from subprocess import check_output
 
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46m', '\033[36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
+
 def verCheck():
-    system('clear')
+    #system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
     ver_url = 'https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt'
     ver_rqst = requests.get(ver_url)
@@ -28,7 +29,12 @@ def verCheck():
             print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
             print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, ver_current, github_ver)) 
             print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, github_ver))
-            system("git clean -d -f > /dev/null && git pull -f > /dev/null")
+            #system('wget https://raw.githubusercontent.com/404-ghost/symbiote/master/symbiote.py')
+            system('rm -rf Checks.py && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/Checks.py')
+            #system('wget https://raw.githubusercontent.com/404-ghost/symbiote/master/logo.py')
+            #system('wget https://raw.githubusercontent.com/404-ghost/symbiote/master/makepath.py')
+            system('rm -rf version.txt && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
+            #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
             with open('version.txt') as f:
                 ver_current = f.read()
                 ver_current = ver_current.strip()
@@ -37,7 +43,10 @@ def verCheck():
             sleep(5)
             #system("clear")
     else:
-        print('{0}[{2}#{0}] {0}Failed To Get Update\n'.format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+        print('{0}[{2}#{0}] {0}Failed To Get Update, {2}Try agai.....n \n'.format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+
+
+
 
 def checkjp2a():
     system('clear')
@@ -73,7 +82,7 @@ def checkNgrok():
         print(' {0}[{2}*{0}]{2} Ngrok Not Found {0}!!'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         print(' {0}[{2}*{0}]{2} Downloading Ngrok...{5}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         if 'Android' in str(check_output(('uname', '-a'))) or 'arm' in str(check_output(('uname', '-a'))):
-            filename = 'ngrok-stable-linux-arm64.zip'
+            filename = 'ngrok-stable-linux-arm.zip'
             url = 'https://bin.equinox.io/c/4VmDzA7iaHb/' + filename
             req=system('wget {0}'.format(url))
             #with open(filename, "wb") as file_obj:
@@ -98,7 +107,7 @@ def checkNgrok():
         system('mv ngrok Server/ngrok')
         system('rm ' + filename)
         system('clear')
-        #print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)) 
+        print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)) 
     else:
         print(" {0}[{2}*{0}] {2}NGROK INSTALLATION FOUND......".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         sleep(1)
@@ -108,16 +117,15 @@ def checkLocalxpose():
         print(' {0}[{2}*{0}]{2} Localxpose Not Found {0}!!'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         print(' {0}[{2}*{0}]{2} Downloading Localxpose...{5}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         if 'Android' in str(check_output(('uname', '-a'))) or 'arm' in str(check_output(('uname', '-a'))):
-            filename = 'loclx-linux-arm64.zip'
+            filename = 'loclx-linux-arm.zip'
             url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
             req=system('wget {0}'.format(url))
             #with open("{0}", "wb".format(filename)) as file_obj:
             #file_obj.write(req.content)
             system('unzip {0} && rm {0}'.format(filename))
-            sleep(2)
             system('mv loclx-linux-* loclx && mv loclx Server/')
             system('chmod +x loclx')
-            #print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
+            print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         else:
             ostype = systemos().lower()
             if architecture()[0] == '64bit':
@@ -134,6 +142,5 @@ def checkLocalxpose():
     else:
         print(" {0}[{2}*{0}] {2}LOCALXPOSE INSTALLATION FOUND.....".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         sleep(1)
-
 
 
