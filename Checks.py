@@ -9,6 +9,36 @@ from platform import system as systemos, architecture
 from subprocess import check_output
 
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46m', '\033[36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
+def verCheck():
+    system('clear')
+    print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+    ver_url = 'https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt'
+    ver_rqst = requests.get(ver_url)
+    ver_sc = ver_rqst.status_code
+    if ver_sc == 200:
+        with open('version.txt') as f:
+            ver_current = f.read()
+            ver_current = ver_current.strip()
+            github_ver = ver_rqst.text
+            github_ver = github_ver.strip()
+        if ver_current == github_ver:
+            print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, github_ver))
+            sleep(3)
+        else:
+            print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+            print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, ver_current, github_ver)) 
+            print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, github_ver))
+            system("git clean -d -f > /dev/null && git pull -f > /dev/null")
+            with open('version.txt') as f:
+                ver_current = f.read()
+                ver_current = ver_current.strip()
+            print("{0}[{2}*{0}] {2}Version Status After Update.{2}.\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+            print("{0}[{2}*{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}*{0}] {0}[{2}Available{0}]{2}- {0}v.{7}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, ver_current, github_ver))
+            sleep(5)
+            #system("clear")
+    else:
+        print('{0}[{2}#{0}] {0}Failed To Get Update\n'.format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+
 def checkjp2a():
     system('clear')
     if 256 != system('which jp2a > /dev/null'):
