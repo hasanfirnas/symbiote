@@ -8,7 +8,7 @@ from time import sleep
 from platform import system as systemos, architecture
 from subprocess import check_output
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46m', '\033[36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
-
+#done
 def verCheck():
     #system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
@@ -57,7 +57,10 @@ def verCheck():
 ##            system('clear')
 ##            system('rm -rf version.txt && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
 ##            system('clear')
-            system("git clean -d -f > /dev/null && git pull -f > /dev/null")
+            #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
+            system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
+            system('git stash')
+            system('git pull')
             with open('version.txt') as f:
                 ver_current = f.read()
                 ver_current = ver_current.strip()
