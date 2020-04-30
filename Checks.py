@@ -60,7 +60,9 @@ def verCheck():
             #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
             system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
             system('git stash')
+            sleep(2)
             system('git pull')
+            sleep(2)
             with open('version.txt') as f:
                 ver_current = f.read()
                 ver_current = ver_current.strip()
