@@ -27,7 +27,7 @@ def verCheck():
         else:
             print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
             print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, ver_current, github_ver)) 
-            print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, github_ver))
+            print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....{7}\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, github_ver,GREEN2))
 ##            system('rm -rf symbiote.py && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/symbiote.py')
 ##            system('clear')
 ##            system('rm -rf Checks.py && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/Checks.py')
@@ -58,7 +58,7 @@ def verCheck():
 ##            system('rm -rf version.txt && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
 ##            system('clear')
             #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
-            system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
+            system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
             system('git stash')
             system('git pull')
             with open('version.txt') as f:
