@@ -37,7 +37,7 @@ termux-open <file_name>
 * wget
 
 # VIDEO (step by step command):
-[![Watch the video](https://imgur.com/MmYQQfW.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://imgur.com/MmYQQfW.png)]()
 
 # SCREENSHOT (Kali-linux):
 ![Shot](https://imgur.com/kBiCDpP.png)
