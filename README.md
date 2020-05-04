@@ -25,9 +25,6 @@ python3 symbiote.py
 ```
 cd symbiote
 cd CapturedData 
-```
-### In termux u want to open the cam file :
-```
 ls
 termux-open <file_name>
 ```
@@ -44,4 +41,7 @@ termux-open <file_name>
 
 # SCREENSHOT (android-termux):
 ![Shot](https://imgur.com/qpTDw8n.png)
+
+
+
 
