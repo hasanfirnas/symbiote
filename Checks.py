@@ -121,7 +121,7 @@ def checkNgrok():
             system('rm ' + filename)
             system('chmod +x ngrok')
             system('clear')
-            print("{4} ".format(GREEN, DEFAULT, RED)) 
+            print("{1} ".format(GREEN, DEFAULT, RED)) 
         else:
             ostype = systemos().lower()
             if architecture()[0] == '64bit':
