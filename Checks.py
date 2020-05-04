@@ -152,8 +152,8 @@ def checkLocalxpose():
             #with open("{0}", "wb".format(filename)) as file_obj:
             #file_obj.write(req.content)
             system('unzip {0} && rm {0}'.format(filename))
-            system('mv loclx-linux-* loclx && mv loclx Server/')
-            system('chmod +x loclx')
+            system('mv loclx-linux-* loclx && chmod +x loclx && mv loclx Server/')
+            #system('chmod +x loclx')
             print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         else:
             ostype = systemos().lower()
