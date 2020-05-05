@@ -289,7 +289,7 @@ else:
     kill = '2'
     sleep(7)
 
-checkjp2a()
+#checkjp2a()
 checkPHP()
 checkNgrok()
 checkLocalxpose()
