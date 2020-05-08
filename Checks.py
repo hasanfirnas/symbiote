@@ -1,6 +1,6 @@
 import subprocess
 import ctypes
-import requests 
+#import requests 
 import urllib
 #from urllib import urlopen
 from os import system, getuid, path
@@ -12,6 +12,7 @@ RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46
 def verCheck():
     #system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+    system('pip install requests')
     ver_url = 'https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt'
     ver_rqst = requests.get(ver_url)
     ver_sc = ver_rqst.status_code
