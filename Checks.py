@@ -8,7 +8,6 @@ from time import sleep
 from platform import system as systemos, architecture
 from subprocess import check_output
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46m', '\033[36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
-#done
 def verCheck():
     system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
@@ -25,7 +24,6 @@ def verCheck():
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0]))
         system('rm -rf test.txt')
         sleep(3)
-        exit()
     else:
         print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, x[0], z[0])) 
@@ -62,18 +60,15 @@ def verCheck():
             #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
         system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
         system('git stash')
-        sleep(1)
         system('git pull')
-        sleep(2)
+        sleep(1)
         system('rm -rf test.txt')
-
         file = open('version.txt','r')
         a = file.read()
         x = a.split("\n")      
         print("{0}[{2}*{0}] {2}Version Status After Update.{2}.\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}*{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}*{0}] {0}[{2}Available{0}]{2}- {0}v.{7}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, x[0], z[0]))
         sleep(5)
-        exit()
 def checkjp2a():
     system('clear')
     if 256 != system('which jp2a > /dev/null'):
