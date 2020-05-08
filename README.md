@@ -34,7 +34,7 @@ termux-open <file_name>
 * wget
 
 # VIDEO (step by step command):
-[![Watch the video](https://imgur.com/MmYQQfW.png)]()
+[![Watch the video](https://imgur.com/MmYQQfW.png)](http://www.facebook.com/story.php?story_fbid=102255528158912&id=100051233940621&scmts=scwspsdd&extid=eSRXEcAFIS7pbAwO)
 
 # SCREENSHOT (Kali-linux):
 ![Shot](https://imgur.com/kBiCDpP.png)
