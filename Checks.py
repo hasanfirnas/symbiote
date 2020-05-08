@@ -23,6 +23,7 @@ def verCheck():
     file2.close()
     if x[0] == z[0]:
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0]))
+        system('rm -rf test.txt')
         sleep(3)
     else:
         print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
@@ -63,6 +64,7 @@ def verCheck():
         sleep(1)
         system('git pull')
         sleep(2)
+        system('rm -rf test.txt')
 
         file = open('version.txt','r')
         a = file.read()
