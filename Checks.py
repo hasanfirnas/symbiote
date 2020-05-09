@@ -114,7 +114,8 @@ def checkNgrok():
             system('chmod +x ngrok')
             system('clear')
             print("{1} ".format(GREEN, DEFAULT, RED)) 
-            exit()
+            #exit
+            sleep(2) 
         else:
             ostype = systemos().lower()
             if architecture()[0] == '64bit':
@@ -130,7 +131,8 @@ def checkNgrok():
         system('rm ' + filename)
         system('clear')
         print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)) 
-        exit() 
+        #exit() 
+        sleep(2)
     else:
         print(" {0}[{2}*{0}] {2}NGROK INSTALLATION FOUND......".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         sleep(1)
@@ -149,7 +151,8 @@ def checkLocalxpose():
             system('mv loclx-linux-* loclx && chmod +x loclx && mv loclx Server/')
             #system('chmod +x loclx')
             print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-            exit()
+            #exit()
+            sleep(2)
         else:
             ostype = systemos().lower()
             if architecture()[0] == '64bit':
@@ -163,7 +166,8 @@ def checkLocalxpose():
         system('unzip {0} && rm {0}'.format(filename))
         system('mv loclx-linux-* loclx && mv loclx Server/')
         print("{1} ".format(GREEN, DEFAULT, RED)) 
-        exit()
+        #exit()
+        sleep(2)
     else:
         print(" {0}[{2}*{0}] {2}LOCALXPOSE INSTALLATION FOUND.....".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         sleep(1)
