@@ -23,16 +23,16 @@ from logo import *
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;91m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
 blink='\033[5m'
 def menu_q():
-    system('clear')
-    print("            {5}+++++++++++++++++++++++++++++++++++++++++++++++++\n           |  {2}WITH GREAT POWER , COMES GREAT RESPONSIBILITY{5}  |     \n            +++++++++++++++++++++++++++++++++++++++++++++++++{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-    if input("\n\n\n\nDo you agree to use this tool for educational/testing purposes only? {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
+    system('clear')                                                                        
+    print('            {5}                                                 \n               |  {2}"{3}UNIX IS VERY SIMPLE {2}IT JUST NEEDS A{5}  |{4}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
+    print('               {5}|  {2}GENIUS TO UNDERSTAND ITS SIMPLICITY"{5}  |{4}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
+    print("               {5}|                       {0}~{3}Dennis Ritchie{5}  |\n{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
+    if input("\n\nDo you agree to use this tool for educational/testing purposes only? {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
         sleep(0.5)
     else:
         print("\n\n{0}YOU ARE NOT AUTHORIZED TO USE THIS TOOL.YOU CAN ONLY USE IT FOR EDUCATIONAL PURPOSE.! ]{4}\n\n".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         exit()
-
-
-def div_q():
+def div_q(): #not in using 
     global user
     system('clear')
     if input("\n\n{0}[{2}#{0}]{2} IF YOUR USING THIS TOOL IN ANDROID PRESS 'Y' {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
@@ -276,6 +276,7 @@ def report(url,port):
             sleep(0.5)
             report(url,port)
 system('clear')
+net()
 verCheck()
 system("git pull") 
 menu_q()
