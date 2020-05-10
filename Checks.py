@@ -8,6 +8,19 @@ from time import sleep
 from platform import system as systemos, architecture
 from subprocess import check_output
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46m', '\033[36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
+def net():
+    system('clear')
+    print("{0}[{2}#{0}] {2}Checking for internet connection{2}....".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+    sleep(3)
+    m = system('wget -q --spider http://google.com')
+    if m == 0:
+        print("\n{0}[{2}#{0}] {3}INTERNET {0}- {3}[{2}CONNECTED{3}]".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+        sleep(3)
+    else:
+        print("\n{0}[{2}#{0}] {3}INTERNET {0}- {3}[{2}NOT-CONNECTED{3}]".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+        print("{0}[{2}#{0}] {2}Turn on your internet connection\n\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+        exit()
+        
 def verCheck():
     system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
