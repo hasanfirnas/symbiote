@@ -12,6 +12,7 @@ from os import system, getuid, path
 from time import sleep
 from platform import system as systemos, architecture
 from subprocess import check_output
+from Checks import *
 #from gif_for_cli.execute import execute
 
 def banner():
@@ -39,48 +40,49 @@ def banner():
     BLINK ,Magenta ="\033[5m","\033[1;34m"
     y='\033[1;33m'
     system('clear')
+    loadingTextPrint()
+    system('clear')
     print('''
-                                                                
-                                {5}...                             
-                           {5}.ckXWMMMMWKx:                        {6}|    
-                         {5};0MMMWKOOOKWMMMWk'                     {6}|     
-                       {5}'KMMWd'       .oNMMMk.                   {6}|     
-                      {5}lMM0d.  {4}.:cllc,.  {5}cKWMN.                  {6}|     
-                     {5}oMWc  {4}'kWMMMMMMMMKl. {5}.XMW.                 {6}|    
-                    {5};MW, {4}.OMMMMMMMMMMMMMWd. {5}KMN                 {6}|              {3}░░░░░░░ ░░    ░░ ░░░    ░░░ ░░░░░░  ░░  ░░░░░░  ░░░░░░░░ ░░░░░░░{4}  
-                    {5}XM: {4};NMMMMMMMMMMMMMMMMN;{5}.XMx                {6}|              {3}░░       ░░  ░░  ░░░░  ░░░░ ░░   ░░ ░░ ░░    ░░    ░░    ░░{4}
-                   {5};Mx {4}lMMMMMMMMMMMMMMMMMMMM:{5}.WM.               {6}|              {3}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4} 
-                   {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo               {6}|              {3}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4} 
-                  {5}.Wc{4} KMMMMMMMMMMMMMMMMMMMMMM0 {5}KN {4}              {6}|{4}              {3}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
-                  KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK              {6}|{4}                                                                 {7}================{4}
-                 .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.             {6}|{4}                                                                   {5}BY: {0}404-ghost{4}     
-                 :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:             {6}|{4}                                                                 {7}================{4} 
-                 cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl             {6}|{4}                         {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4} 
-                 cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc             {6}|{4}                      {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
-                 ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,             {6}|{4}           
-                 .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.              {6}|{4}           
-                  XlNMMMMMMMMWWWWxKWMWWMMMMMMMMWdK              {6}|{4}           
-                  ..:koXMMMMMWWMOdkoMWWMMMMMWxN:..              {6}|{4}           
-                       KMMMWddWW0XWxWWWXooWMW x                 {6}|{4}     
-                       xMMNl{0}",{4}WWWWWWWWW{0},"{4}lWWW: {5}'\'{4}               {6}|{4}     
-                        lXMM{0};;{4}WWWWWWWWM{0};;{4}WMMk{5}.|.{4}                {6}|{4}     
-                       {3}oWMMM{4}KkWWWWWWWWWW{3}MMMMMM.{5}'\'{4}               {6}|{4}     
-                      {3}cMMMMMMM{4}WMMMWMMWM{3}MMMMMMWO  {5}.\.{4}            {6}|{4}     
-                     {3}:MMMMMMMM{4}MMMMMMMM{3}MMMMMMWMM:  {5}'\'{4}            {6}|{4}     
-                      {3}MMMMMMMMX{4}MMMMMM{3}NKMMMMMMM:   {5}.|.{4}           {6}|{4}     
-                       {3}KMMMMMMwc{4}WMMM{3}kkMMMMMMM;    {5}.|.{4}           {6}|{4}     
-                       {3}cMMMMMMd{4}  ...  {3}WMMMMMo    {5}'|'{4}            {6}|{4}     
-                        {3}XMMMMMk{4}      {3}.KMMMMW.   {5}./.{4}             {6}|{4}     
-                        {3};MMMK;{4}         {3}'kMMl    {5}.|.{4}             {6}|{4}     
-                         {3}kX:{4}             {3}lx:     {5}.|.{4}            {6}|{4}     
-                          {3}"{4}               {3}"{4}      {5}'/'{4}            {6}|     
-                                                {5}./.             {6}|     
-                                                {5}.|.             {6}|     
-                                               {5}'/'              {6}|     
-                                               {5}'|'              {6}|     
-                                               {5}.|'              {6}|     
 
-
+                                  {5}...                             
+                             {5}.ckXWMMMMWKx:                        {6}|    
+                           {5};0MMMWKOOOKWMMMWk'                     {6}|     
+                         {5}'KMMWd'       .oNMMMk.                   {6}|     
+                        {5}lMM0d.  {4}.:cllc,.  {5}cKWMN.                  {6}|     
+                       {5}oMWc  {4}'kWMMMMMMMMKl. {5}.XMW.                 {6}|    
+                      {5};MW, {4}.OMMMMMMMMMMMMMWd. {5}KMN                 {6}|              {3}░░░░░░░ ░░    ░░ ░░░    ░░░ ░░░░░░  ░░  ░░░░░░  ░░░░░░░░ ░░░░░░░{4}  
+                      {5}XM: {4};NMMMMMMMMMMMMMMMMN;{5}.XMx                {6}|              {3}░░       ░░  ░░  ░░░░  ░░░░ ░░   ░░ ░░ ░░    ░░    ░░    ░░{4}
+                     {5};Mx {4}lMMMMMMMMMMMMMMMMMMMM:{5}.WM.               {6}|              {3}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4} 
+                     {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo               {6}|              {3}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4} 
+                    {5}.Wc{4} KMMMMMMMMMMMMMMMMMMMMMM0 {5}KN {4}              {6}|{4}              {3}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
+                    KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK              {6}|{4}                                                                 {7}================{4}
+                   .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.             {6}|{4}                                                                   {5}BY: {0}404-ghost{4}     
+                   :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:             {6}|{4}                                                                 {7}================{4} 
+                   cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl             {6}|{4}                         {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4} 
+                   cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc             {6}|{4}                      {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
+                   ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,             {6}|{4}           
+                   .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.              {6}|{4}           
+                    XlNMMMMMMMMWWWWxKWMWWMMMMMMMMWdK              {6}|{4}
+                    ..:koXMMMMMWWMOdkoMWWMMMMMWxN:..              {6}|{4}           
+                         KMMMWddWW0XWxWWWXooWMW x                 {6}|{4}     
+                         xMMNl{0}",{4}WWWWWWWWW{0},"{4}lWWW: {5}'\'{4}               {6}|{4}     
+                          lXMM{0};;{4}WWWWWWWWM{0};;{4}WMMk{5}.|.{4}                {6}|{4}     
+                         {3}oWMMM{4}KkWWWWWWWWWW{3}MMMMMM.{5}'\'{4}               {6}|{4}     
+                        {3}cMMMMMMM{4}WMMMWMMWM{3}MMMMMMWO  {5}.\.{4}            {6}|{4}     
+                       {3}:MMMMMMMM{4}MMMMMMMM{3}MMMMMMWMM:  {5}'\'{4}            {6}|{4}     
+                        {3}MMMMMMMMX{4}MMMMMM{3}NKMMMMMMM:   {5}.|.{4}           {6}|{4}     
+                         {3}KMMMMMMwc{4}WMMM{3}kkMMMMMMM;    {5}.|.{4}           {6}|{4}     
+                         {3}cMMMMMMd{4}  ...  {3}WMMMMMo    {5}'|'{4}            {6}|{4}     
+                          {3}XMMMMMk{4}      {3}.KMMMMW.   {5}./.{4}             {6}|{4}     
+                          {3};MMMK;{4}         {3}'kMMl    {5}.|.{4}             {6}|{4}     
+                           {3}kX:{4}             {3}lx:     {5}.|.{4}            {6}|{4}     
+                            {3}"{4}               {3}"{4}      {5}'/'{4}            {6}|     
+                                                  {5}./.             {6}|     
+                                                  {5}.|.             {6}|     
+                                                 {5}'/'              {6}|     
+                                                 {5}'|'              {6}|     
+                                                 {5}.|'              {6}|     
+  
     '''.format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
 
 def android_banner():
@@ -89,58 +91,60 @@ def android_banner():
     y='\033[1;33m'
     system('clear')
     print('''
-                                                              
-                              {5}...      
-                         {5}.ckXWMMMMWKx:  
-                       {5};0MMMWKOOOKWMMMWk'
-                     {5}'KMMWd'       .oNMMMk.  
-                    {5}lMM0d.  {4}.:cllc,.  {5}cKWMN.  
-                   {5}oMWc  {4}'kWMMMMMMMMKl. {5}.XMW.  
-                  {5};MW, {4}.OMMMMMMMMMMMMMWd. {5}KMN   
-                  {5}XM: {4};NMMMMMMMMMMMMMMMMN;{5}.XMx 
-                 {5};Mx {4}lMMMMMMMMMMMMMMMMMMMM:{5}.WM.
-                 {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo  
-                 {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo  
-                {5}.Wc{4} KMMMMMMMMMMMMMMMMMMMMMM0 {5}KN {4}
-                KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK
-               .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.
-               :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:
-               cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl
-               cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc 
-               ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,
-               .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.
-                XlNMMMMMMMMWWWWxKWMWWMMMMMMMMWdK 
-                ..:koXMMMMMWWMOdkoMWWMMMMMWxN:.. 
-                     KMMMWddWW0XWxWWWXooWMW x  
-                     xMMNl{0}",{4}WWWWWWWWW{0},"{4}lWWW: {5}'\'{4} 
-                      lXMM{0};;{4}WWWWWWWWM{0};;{4}WMMk{5}.|.{4} 
-                     {3}oWMMM{4}KkWWWWWWWWWW{3}MMMMMM.{5}'\'{4}
-                    {3}cMMMMMMM{4}WMMMWMMWM{3}MMMMMMWO  {5}.\.{4}
-                   {3}:MMMMMMMM{4}MMMMMMMM{3}MMMMMMWMM:  {5}'\'{4}
-                    {3}MMMMMMMMX{4}MMMMMM{3}NKMMMMMMM:   {5}.|.{4}
-                     {3}KMMMMMMwc{4}WMMM{3}kkMMMMMMM;    {5}.|.{4}
-                     {3}cMMMMMMd{4}  ...  {3}WMMMMMo    {5}'|'{4}
-                      {3}XMMMMMk{4}      {3}.KMMMMW.   {5}./.{4}
-                      {3};MMMK;{4}         {3}'kMMl    {5}.|.{4} 
-                       {3}kX:{4}             {3}lx:     {5}.|.{4} 
-                        {3}"{4}               {3}"{4}      {5}'/'{4}  
-                                              {5}./.  
-                                              {5}.|.
-                                             {5}'/' 
-                                             {5}'|' 
-                                             {5}.|' {4}
+                                {5}...      
+                           {5}.ckXWMMMMWKx:  
+                         {5};0MMMWKOOOKWMMMWk'
+                       {5}'KMMWd'       .oNMMMk.  
+                      {5}lMM0d.  {4}.:cllc,.  {5}cKWMN.  
+                     {5}oMWc  {4}'kWMMMMMMMMKl. {5}.XMW.  
+                    {5};MW, {4}.OMMMMMMMMMMMMMWd. {5}KMN   
+                    {5}XM: {4};NMMMMMMMMMMMMMMMMN;{5}.XMx 
+                   {5};Mx {4}lMMMMMMMMMMMMMMMMMMMM:{5}.WM.
+                   {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo  
+                   {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo  
+                  {5}.Wc{4} KMMMMMMMMMMMMMMMMMMMMMM0 {5}KN {4}
+                  KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK
+                 .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.
+                 :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:
+                 cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl
+                 cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc 
+                 ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,
+                 .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.
+                  XlNMMMMMMMMWWWWxKWMWWMMMMMMMMWdK 
+                  ..:koXMMMMMWWMOdkoMWWMMMMMWxN:.. 
+                       KMMMWddWW0XWxWWWXooWMW x  
+                       xMMNl{0}",{4}WWWWWWWWW{0},"{4}lWWW: {5}'\'{4} 
+                        lXMM{0};;{4}WWWWWWWWM{0};;{4}WMMk{5}.|.{4} 
+                       {3}oWMMM{4}KkWWWWWWWWWW{3}MMMMMM.{5}'\'{4}
+                      {3}cMMMMMMM{4}WMMMWMMWM{3}MMMMMMWO  {5}.\.{4}
+                     {3}:MMMMMMMM{4}MMMMMMMM{3}MMMMMMWMM:  {5}'\'{4}
+                      {3}MMMMMMMMX{4}MMMMMM{3}NKMMMMMMM:   {5}.|.{4}
+                       {3}KMMMMMMwc{4}WMMM{3}kkMMMMMMM;    {5}.|.{4}
+                       {3}cMMMMMMd{4}  ...  {3}WMMMMMo    {5}'|'{4}
+                        {3}XMMMMMk{4}      {3}.KMMMMW.   {5}./.{4}
+                        {3};MMMK;{4}         {3}'kMMl    {5}.|.{4} 
+                         {3}kX:{4}             {3}lx:     {5}.|.{4} 
+                          {3}"{4}               {3}"{4}      {5}'/'{4}  
+                                                {5}./.  
+                                                {5}.|.
+                                               {5}'/' 
+                                               {5}'|' 
+                                               {5}.|' {4}
 
-   {3}░░░░░░░ ░░    ░░ ░░░    ░░░ ░░░░░░  ░░  ░░░░░░  ░░░░░░░░ ░░░░░░░{4}
-   {3}░░       ░░  ░░  ░░░░  ░░░░ ░░   ░░ ░░ ░░    ░░    ░░    ░░{4}
-   {3}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4}
-   {3}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4}
-   {3}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
-                                                    {7}================{4}
-                                                      {5}BY: {0}404-ghost{4}
-                                                    {7}================{4}
-              {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
-           {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
+     {3}░░░░░░░ ░░    ░░ ░░░    ░░░ ░░░░░░  ░░  ░░░░░░  ░░░░░░░░ ░░░░░░░{4}
+     {3}░░       ░░  ░░  ░░░░  ░░░░ ░░   ░░ ░░ ░░    ░░    ░░    ░░{4}
+     {3}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4}
+     {3}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4}
+     {3}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
+                                                      {7}================{4}
+                                                        {5}BY: {0}404-ghost{4}
+                                                      {7}================{4}
+                {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
+             {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
 '''.format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
+    print("{7}-------------------------------------------------------------------------{5}".format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
+    #loadingTextPrint()
+    loadingHack()
 def sbanner():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;31m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
     lred,blink,lyellow="\033[91m",'\033[5m',"\033[93m"
@@ -253,4 +257,3 @@ def android_end():
 
               {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._ 
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2))
-
