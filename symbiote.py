@@ -282,16 +282,16 @@ system("git pull")
 menu_q()
 global kill
 system('clear')
+sbanner()
 if input("\n\n{0}[{2}#{0}]{2} IF YOUR USING THIS TOOL IN ANDROID PRESS 'Y' {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
     android_banner()
     kill = '1'
-    sleep(7)
 else:
     banner()
     kill = '2'
-    sleep(7)
+    sleep(4)
 
-#checkjp2a()
+checkjp2a()
 checkPHP()
 checkNgrok()
 checkLocalxpose()
