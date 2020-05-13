@@ -27,7 +27,7 @@ def menu_q():
     print('            {5}                                                 \n               |  {2}"{3}UNIX IS VERY SIMPLE {2}IT JUST NEEDS A{5}  |{4}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     print('               {5}|  {2}GENIUS TO UNDERSTAND ITS SIMPLICITY"{5}  |{4}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     print("               {5}|                       {0}~{3}Dennis Ritchie{5}  |\n{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-    if input("\n\nDo you agree to use this tool for educational/testing purposes only? {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
+    if input("\n\nDo you agree to use this tool for educational purposes only? {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
         sleep(0.5)
     else:
         print("\n\n{0}YOU ARE NOT AUTHORIZED TO USE THIS TOOL.YOU CAN ONLY USE IT FOR EDUCATIONAL PURPOSE.! ]{4}\n\n".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
