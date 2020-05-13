@@ -7,6 +7,7 @@ from os import system, getuid, path
 from time import sleep
 from platform import system as systemos, architecture
 from subprocess import check_output
+import sys, os, time, random, threading
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[91m', '\033[46m', '\033[36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
 def net():
     system('clear')
@@ -185,4 +186,34 @@ def checkLocalxpose():
         print(" {0}[{2}*{0}] {2}LOCALXPOSE INSTALLATION FOUND.....".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         sleep(1)
 
+def loadingHack():
+    chaine ="///////////////////////"+"[*]"+" Starting symbiote......"+"///////////////////////".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)
+    charspec = "$*X^%\#~?;"
+    i=0
+    while i<4:
+        chainehack = ""
+        i +=1
+        for c in chaine:
+            chainehack += c
+            r = random.choice(charspec)+random.choice(charspec)+random.choice(charspec)
+            if len(chainehack+r) <= len(chaine):
+                pass
+            else:
+                r = ""
+            sys.stdout.write('\r'+chainehack+r)
+            time.sleep(0.06)
 
+def loadingTextPrint():
+    string ="                    "+"[*]"+" Starting symbiote......"
+    a= 0
+    while a <3:    
+        space = " " * 100
+        sys.stdout.write("\r"+space)
+        x = 1
+        a += 1
+        while x <= len(string):
+            times = "0.1"
+            times += str(random.choice(range(1, 3)))
+            sys.stdout.write("\r "+string[:x]+">")
+            time.sleep(float(times))
+            x += 1
