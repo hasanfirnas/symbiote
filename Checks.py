@@ -37,6 +37,9 @@ def verCheck():
     file2.close()
     if x[0] == z[0]:
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0]))
+        system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
+        system('git stash')
+        system('git pull')
         system('rm -rf test.txt')
         sleep(3)
     else:
