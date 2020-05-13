@@ -192,7 +192,7 @@ def checkLocalxpose():
         sleep(1)
 
 def loadingHack():
-    chaine ="///////////////////////"+"[*]"+" Starting symbiote......"+"///////////////////////".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)
+    chaine ="/////////////////////"+"[*]"+" Starting symbiote......"+"/////////////////////".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)
     charspec = "$*X^%\#~?;"
     i=0
     while i<4:
