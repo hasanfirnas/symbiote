@@ -86,7 +86,9 @@ def verCheck():
         x = a.split("\n")      
         print("{0}[{2}*{0}] {2}Version Status After Update.{2}.\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}*{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}*{0}] {0}[{2}Available{0}]{2}- {0}v.{7}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, x[0], z[0]))
-        sleep(5)
+        sleep(1)
+        print("\t{2}[{0}#{2}] {0}Restart program \n\t {2}Enter this command {0}-> {3}python symbiote.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+        exit()
 def checkjp2a():
     system('clear')
     if 256 != system('which jp2a > /dev/null'):
@@ -130,10 +132,8 @@ def checkNgrok():
             system('mv ngrok Server/ngrok')
             system('rm ' + filename)
             system('chmod +x ngrok')
-            system('clear')
-            print("{1} ".format(GREEN, DEFAULT, RED)) 
-            #exit
-            sleep(2) 
+            print("\t{2}[{0}#{2}] {0}Restart program \n\t {2}Enter this command {0}-> {3}python symbiote.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+            exit()  
         else:
             ostype = systemos().lower()
             if architecture()[0] == '64bit':
@@ -167,10 +167,8 @@ def checkLocalxpose():
             #file_obj.write(req.content)
             system('unzip {0} && rm {0}'.format(filename))
             system('mv loclx-linux-* loclx && chmod +x loclx && mv loclx Server/')
-            #system('chmod +x loclx')
-            print("{4} ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-            #exit()
-            sleep(2)
+            print("\t{2}[{0}#{2}] {0}Restart program \n\t {2}Enter this command {0}-> {3}python symbiote.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+            exit()
         else:
             ostype = systemos().lower()
             if architecture()[0] == '64bit':
