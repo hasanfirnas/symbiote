@@ -25,7 +25,7 @@ def net():
 def verCheck():
     system('clear')
     print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
-    system('wget -O test.txt https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
+    system('wget -q -O test.txt https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
     system('clear')
     file = open('version.txt','r')
     a = file.read()
