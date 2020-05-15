@@ -37,9 +37,9 @@ def verCheck():
     file2.close()
     if x[0] == z[0]:
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0]))
-        system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
-        system('git stash')
-        system('git pull')
+        system('git checkout HEAD^ CapturedData --quiet && git checkout HEAD^ Server --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ Checks.py --quiet && git checkout HEAD^ logo.py --quiet && git checkout HEAD^ makepath.py --quiet && git checkout HEAD^ symbiote.py --quiet && git checkout HEAD^ version.txt --quiet')
+        system('git stash --quiet')
+        system('git pull --quiet')
         system('rm -rf test.txt')
         sleep(3)
     else:
@@ -76,8 +76,8 @@ def verCheck():
 ##            system('rm -rf version.txt && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
 ##            system('clear')
             #system("git clean -d -f > /dev/null && git pull -f > /dev/null")
-        system('git checkout HEAD^ CapturedData && git checkout HEAD^ Server && git checkout HEAD^ LICENSE && git checkout HEAD^ Checks.py && git checkout HEAD^ logo.py && git checkout HEAD^ makepath.py && git checkout HEAD^ symbiote.py && git checkout HEAD^ version.txt')
-        system('git stash')
+        system('git checkout HEAD^ CapturedData --quiet && git checkout HEAD^ Server --quiet && git checkout HEAD^ LICENSE --quiet && git checkout HEAD^ Checks.py --quiet && git checkout HEAD^ logo.py --quiet && git checkout HEAD^ makepath.py --quiet && git checkout HEAD^ symbiote.py --quiet && git checkout HEAD^ version.txt --quiet')
+        system('git stash --quiet')
         system('git pull')
         sleep(1)
         system('rm -rf test.txt')
