@@ -278,7 +278,7 @@ def report(url,port):
 system('clear')
 net()
 verCheck()
-system("git pull") 
+system("git pull --quiet") 
 menu_q()
 global kill
 system('clear')
