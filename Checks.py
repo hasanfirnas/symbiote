@@ -26,7 +26,7 @@ def verCheck():
     #system('clear')
     print("\n{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
     system('wget -q -O test.txt https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
-    system('clear')
+    #system('clear')
     file = open('version.txt','r')
     a = file.read()
     x = a.split("\n")
@@ -43,7 +43,7 @@ def verCheck():
         system('rm -rf test.txt')
         sleep(2)
     else:
-        print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+        print("\n{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, x[0], z[0])) 
         print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....{7}\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, z[0] ,GREEN2))
 ##            system('rm -rf symbiote.py && wget https://raw.githubusercontent.com/404-ghost/symbiote/master/symbiote.py')
