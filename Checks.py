@@ -23,8 +23,8 @@ def net():
         exit()
         
 def verCheck():
-    system('clear')
-    print("{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+    #system('clear')
+    print("\n{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
     system('wget -q -O test.txt https://raw.githubusercontent.com/404-ghost/symbiote/master/version.txt')
     system('clear')
     file = open('version.txt','r')
@@ -41,7 +41,7 @@ def verCheck():
         system('git stash --quiet')
         system('git pull --quiet')
         system('rm -rf test.txt')
-        sleep(3)
+        sleep(2)
     else:
         print("{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
         print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, x[0], z[0])) 
