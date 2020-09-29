@@ -1,6 +1,7 @@
-```
+```javascript 
 <script>
   src="https://tryhackme.com/badge/89155"
+  console.log(src)
 </script>
 ```
 <p align="center">
