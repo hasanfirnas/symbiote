@@ -1,6 +1,6 @@
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/Kalighost404.png" alt="TryHackMe">
+<img src="https://tryhackme.com/badge/89155">
 
 <p align="center">
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
