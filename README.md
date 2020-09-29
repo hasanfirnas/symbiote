@@ -1,4 +1,4 @@
-<script src="https://tryhackme.com/badge/89155"></script>
+<script src="https://tryhackme.com/badge/89155" ></script>
 <p align="center">
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
 </p>
