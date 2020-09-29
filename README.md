@@ -1,9 +1,7 @@
-```javascript 
-<script>
-  src="https://tryhackme.com/badge/89155"
-  console.log(src)
-</script>
-```
+
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/Kalighost404.png" alt="TryHackMe">
+
 <p align="center">
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
 </p>
