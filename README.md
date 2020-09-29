@@ -1,6 +1,6 @@
 
 
-<img src="https://tryhackme.com/badge/89155">
+
 
 <p align="center">
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
