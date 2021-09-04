@@ -55,10 +55,10 @@ def banner():
                      {5};Mx {4}lMMMMMMMMMMMMMMMMMMMM:{5}.WM.               {6}|              {3}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4} 
                      {5}kN {4}:MMMMMMMMMMMMMMMMMMMMMW'{5}lMo               {6}|              {3}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4} 
                     {5}.Wc{4} KMMMMMMMMMMMMMMMMMMMMMM0 {5}KN {4}              {6}|{4}              {3}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
-                    KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK              {6}|{4}                                                                 {7}================{4}
-                   .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.             {6}|{4}                                                                   {5}BY: {0}404-ghost{4}     
-                   :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:             {6}|{4}                                                                 {7}================{4} 
-                   cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl             {6}|{4}                         {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4} 
+                    KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK              {6}|{4}                                                                 {7}==================={4}
+                   .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.             {6}|{4}                                                                   {5}BY: {0}HASAN FIRNAS I{4}     
+                   :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:             {6}|{4}                                                                 {7}==================={4} 
+                   cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl             {6}|{4}                         {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4} 
                    cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc             {6}|{4}                      {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
                    ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,             {6}|{4}           
                    .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.              {6}|{4}           
@@ -136,10 +136,10 @@ def android_banner():
    {3}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4}
    {3}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4}
    {3}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
-                                                    {7}================{4}
-                                                      {5}BY: {0}404-ghost{4}
-                                                    {7}================{4}
-              {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
+                                                    {7}==================={4}
+                                                      {5}BY: {0}HASAN FIRNAS I{4}
+                                                    {7}==================={4}
+              {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4}
            {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
 '''.format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
     print("{7}----------------------------------------------------------------------{5}".format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
@@ -158,10 +158,10 @@ def sbanner():
    {8}▒▒▒▒▒▒▒   ▒▒▒▒   ▒▒ ▒▒▒▒ ▒▒ ▒▒▒▒▒▒  ▒▒ ▒▒    ▒▒    ▒▒    ▒▒▒▒▒{4}
    {8}     ▓▓    ▓▓    ▓▓  ▓▓  ▓▓ ▓▓   ▓▓ ▓▓ ▓▓    ▓▓    ▓▓    ▓▓{4}
    {8}███████    ██    ██      ██ ██████  ██  ██████     ██    ███████{4}
-                                               {7}================{4}
-                                                {5}BY: {0}404-ghost{4} 
-                                               {7}================{4}        
-           {7}GITHUB LINK{6}{0} : {4}{5}https://github.com/404-ghost{4}               
+                                               {7}==================={4}
+                                                {5}BY: {0}HASAN FIRNAS I{4} 
+                                               {7}==================={4}        
+           {7}GITHUB LINK{6}{0} : {4}{5}https://github.com/hasanfirnas{4}               
        {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2,YELLOW2,lred,lyellow))
 def end():
@@ -176,7 +176,7 @@ def end():
                                                                                               {5}|{4}
                                                                                               {5}|{4}
                                                                                               {5}|{4}
-                                       {2}'cdxOOkdl,{4}                                             {5}|{4}                                          {0}<Symbiote> {5}BY: {0}404-ghost
+                                       {2}'cdxOOkdl,{4}                                             {5}|{4}                                          {0}<Symbiote> {5}BY: {0}HASAN FIRNAS I
                                     {2}.lKMMMMMMMMMMXd.{4}                                          {5}|{4}                                       
                                    {2}lNMMMMMMMMMMNXXNNo{4}                                         {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}IF YOU LIKE THIS TOOL, THEN PLEASE HELP TO BECOME BETTER.       
                                  {2}'0MMMMMMMNkl,..   .'.{4}                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}PLEASE LET ME KNOW , IF ANY PROBLEM IN THIS. 
@@ -186,7 +186,7 @@ def end():
                             {2}.KMMMMMX; .';:cc:;,..{4}                                             {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.  
                            {2}.XMMMMMWkOXWMMMMMMMMMWXOo;.{4}                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
                           {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMW0o'{4}                                     {5}|{4}                       
-                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                                   {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
+                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                                   {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4}
                         {2},NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO,{4}                                 {5}|{4}                                  
                        {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                                {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._
                      {2},0MMMMMMMMMMMMMMMWXOkxMMkllllodxOMMMMMMMMWd.{4}                             {5}|{4}
@@ -244,7 +244,7 @@ def android_end():
                            {2}.l0WMMMMMWO:{4}
                               {2}.,:c;'.{4}
 
-                        {0}<Symbiote> {5}BY: {0}404-ghost
+                        {0}<Symbiote> {5}BY: {0}HASAN FIRNAS I
     {0}[[{6}{2}*{4}{0}]] {7}IF YOU LIKE THIS TOOL, THEN PLEASE HELP TO BECOME BETTER.
     {0}[[{6}{2}*{4}{0}]] {7}PLEASE LET ME KNOW , IF ANY PROBLEM IN THIS.
     {0}[[{6}{2}*{4}{0}]] {7}MAKE PULL REQUEST, LET US KNOW YOU SUPPORT US.
@@ -253,7 +253,7 @@ def android_end():
     {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.
     {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
 
-                 {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/404-ghost{4}
+                 {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4}
 
               {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._ 
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2))
