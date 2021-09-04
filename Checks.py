@@ -180,10 +180,8 @@ def checkLocalxpose():
                 filename = 'loclx-linux-386.zip'.format(ostype)
         url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
         req=system('wget {0}'.format(url))
-        #with open("{0}", "wb".format(filename)) as file_obj:
-            #file_obj.write(req.content)
         system('unzip {0} && rm {0}'.format(filename))
-        system('mv loclx-linux-* loclx && mv loclx Server/')
+        system('mv loclx* loclx && mv loclx Server/')
         print("{1} ".format(GREEN, DEFAULT, RED)) 
         #exit()
         sleep(2)
