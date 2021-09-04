@@ -155,7 +155,7 @@ def randomServeo(port):
     f=open("link.url", "r")
     url=(f"{f.read().split(',')[1]}")
     f.close()
-    localhost('localhost',url,port)
+    serveo('localhost',url,port)
 
 
 def selectServer(port):
