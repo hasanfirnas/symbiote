@@ -248,6 +248,8 @@ def report(url,port):
         if (ans == "X"):
             system('clear')
             system('cat Server/{0}/ip.txt >> CapturedData/ip.txt'.format(name))
+            pid=(int(os.popen("netstat -nlp | grep php").read().split('LISTEN')[1].split('/')[0].strip()))
+            os.kill(pid,9)
             fresh()
             global kill
             if kill == '1':
