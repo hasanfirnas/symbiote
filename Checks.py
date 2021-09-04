@@ -181,7 +181,7 @@ def checkLocalxpose():
         url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
         req=system('wget {0}'.format(url))
         system('unzip {0} && rm {0}'.format(filename))
-        system('mv loclx* loclx && mv loclx Server/')
+        system('mv loclx Server/')
         print("{1} ".format(GREEN, DEFAULT, RED)) 
         #exit()
         sleep(2)
