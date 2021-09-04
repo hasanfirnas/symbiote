@@ -14,9 +14,10 @@
 ## step 1 (install this before you start):
 ```
 apt update && upgrade
-apt-get install python
-apt-get install wget
-apt-get install php
+apt-get install python -y
+apt-get install wget -y
+apt-get install php -y
+apt-get install openssh -y
 ```
 ## step 2:
 ```
