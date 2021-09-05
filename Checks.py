@@ -97,7 +97,7 @@ def checkjp2a():
         sleep(1)
     else:
         print("{0}[{2}*{0}] {2}JP2A NOT FOUND\n {0}[{2}*{0}] {2}Installing PHP... ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-        system('apt-get install jp2a > /dev/null')
+        system('apt-get install jp2a -y > /dev/null')
         exit()
 
 def checkwget():
@@ -107,7 +107,7 @@ def checkwget():
         sleep(1)
     else:
         print("{0}[{2}*{0}] {2}WGET NOT FOUND\n {0}[{2}*{0}] {2}Installing PHP... ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-        system('apt-get install wget > /dev/null')
+        system('apt-get install wget -y > /dev/null')
         exit()
 
 def checkPHP():
@@ -116,7 +116,7 @@ def checkPHP():
         sleep(1)
     else:
         print("{0}[{2}*{0}] {2}PHP NOT FOUND\n {0}[{2}*{0}] {2}Installing PHP... ".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-        system('apt-get install php > /dev/null')
+        system('apt-get install php -y > /dev/null')
         exit()
 
 def checkNgrok():
