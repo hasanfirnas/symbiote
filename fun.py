@@ -28,7 +28,7 @@ def stock1():
     }
 
     response = requests.get('https://www.moneycontrol.com/india/stockpricequote/computers-hardware/redingtonindia/RI37', headers=headers, cookies=cookies)
-    soup = BeautifulSoup(str(response.text), 'lxml')
+    soup = BeautifulSoup(str(response.text), 'html.parser')
     all_p=soup.find_all('div', attrs={'class' : 'inprice1 nsecp'})
     if float(all_p[0].text) >= float(180.00):
         print(("{3}+{4}"*25).format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
