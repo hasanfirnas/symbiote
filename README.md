@@ -8,8 +8,7 @@
 
 # AVAILABLE TUNNELLING OPTIONS**
 1) LOCALXPOSE (https://localxpose.io)
-2) SERVEO (https://serveo.net/)
-3) NGROK (https://ngrok.com/)
+2) NGROK (https://ngrok.com/)
 # Installing (Kali Linux/Termux):
 ## step 1 (install this before you start):
 ```
