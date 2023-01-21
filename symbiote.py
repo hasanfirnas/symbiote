@@ -263,9 +263,9 @@ def report(url,port):
             sleep(0.5)
             report(url,port)
 system('clear')
-#net()
-#verCheck()
-loop()
+# verCheck()
+system('termux-open https://github.com/404-ghost/symbiote &>/dev/null')
+sleep(1)
 system("git pull --quiet") 
 menu_q()
 global kill
@@ -278,7 +278,6 @@ else:
     banner()
     kill = '2'
     sleep(4)
-
 checkjp2a()
 checkPHP()
 checkNgrok()
@@ -288,4 +287,3 @@ getpath()
 port=selectPort()
 option()
 selectServer(port)
-
