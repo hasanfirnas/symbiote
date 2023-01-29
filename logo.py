@@ -58,8 +58,8 @@ def banner():
                     KMNMMMMMMMMMMMMMMMMMMMMMMMMMNNMK              {6}|{4}                                                                 {7}==================={4}
                    .MMMMMMMMMMMWWWWWWWWWWMMMMMMMMMMM.             {6}|{4}                                                                   {5}BY: {0}HASAN FIRNAS I{4}     
                    :MMMMMWOWMMMWWMMMMMMWWMMMW0NMMMMM:             {6}|{4}                                                                 {7}==================={4} 
-                   cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl             {6}|{4}                         {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4} 
-                   cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc             {6}|{4}                      {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
+                   cMMMMK{5}{1}.":{4}cXMWWWWMWMMWWMK{5}{1}:".{4}xMMMMMl             {6}|{4}                         {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4} 
+                   cMMMMMW{5}{1}"   "{4}OWWMWWWWWX{5}{1}"  "{4}XMMMMMMc             {6}|{4}                      {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas{4}
                    ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,             {6}|{4}           
                    .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.              {6}|{4}           
                     XlNMMMMMMMMWWWWxKWMWWMMMMMMMMWdK              {6}|{4}
@@ -139,8 +139,8 @@ def android_banner():
                                                     {7}==================={4}
                                                       {5}BY: {0}HASAN FIRNAS I{4}
                                                     {7}==================={4}
-              {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4}
-           {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
+              {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
+           {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas{4}
 '''.format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
     print("{7}----------------------------------------------------------------------{5}".format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
     #loadingTextPrint()
@@ -161,8 +161,8 @@ def sbanner():
                                                {7}==================={4}
                                                 {5}BY: {0}HASAN FIRNAS I{4} 
                                                {7}==================={4}        
-           {7}GITHUB LINK{6}{0} : {4}{5}https://github.com/hasanfirnas{4}               
-       {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._{4}
+           {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}               
+       {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas{4}
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2,YELLOW2,lred,lyellow))
 def end():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;91m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
@@ -186,9 +186,9 @@ def end():
                             {2}.KMMMMMX; .';:cc:;,..{4}                                             {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.  
                            {2}.XMMMMMWkOXWMMMMMMMMMWXOo;.{4}                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
                           {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMW0o'{4}                                     {5}|{4}                       
-                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                                   {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4}
+                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                                   {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
                         {2},NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO,{4}                                 {5}|{4}                                  
-                       {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                                {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._
+                       {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                                {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas
                      {2},0MMMMMMMMMMMMMMMWXOkxMMkllllodxOMMMMMMMMWd.{4}                             {5}|{4}
             {2}.dc;'';lOWMMMMMMMMMMMMMMMc.   {6}{0}.WM,{4}      {2};KMMMMMMMMMMK'{4}                            {5}|{4}        
              {2}cWMMMMMMMMMMMMMMMMM0c,{6}{0}WMo    oMW.{4}     {2}dWMMMMMMN0OOOKK,{4}                           {5}|{4}
@@ -253,7 +253,7 @@ def android_end():
     {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.
     {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
 
-                 {7}GITHUB LINK{6}{0} :  {4}{5}https://github.com/hasanfirnas{4}
+                 {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
 
-              {7}INSTAGRAM ID{6}{0} : {4}{5}https://www.instagram.com/_yoo_yoo._ 
+              {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas 
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2))
