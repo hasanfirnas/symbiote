@@ -12,7 +12,6 @@ import subprocess
 import ctypes
 from time import sleep
 from os import system, environ, path, getuid, popen
-from distutils.dir_util import copy_tree
 from subprocess import check_output, CalledProcessError
 from sys import stdout, argv, exit
 from Server import *
