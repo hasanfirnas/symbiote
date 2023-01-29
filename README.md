@@ -7,9 +7,9 @@
 </p>
 
 # **AVAILABLE TUNNELLING OPTIONS**
-1) NGROK (https://ngrok.com)
+1) NGROK [ACCOUNT NEEDED] (https://ngrok.com)
 2) Localhost.run (http://localhost.run)
-3) LOCALXPOSE (https://localxpose.io)
+3) LOCALXPOSE [ACCOUNT NEEDED] (https://localxpose.io)
 # Installing (Kali Linux/Termux):
 ## step 1 (install this before you start):
 ```
