@@ -154,7 +154,7 @@ def loadingHack():
             else:
                 r = ""
             sys.stdout.write('\r'+chainehack+r)
-            time.sleep(0.06)
+            time.sleep(0.006)
 
 def loadingTextPrint():
     string ="                    "+"[*]"+" Starting symbiote......"
@@ -165,7 +165,7 @@ def loadingTextPrint():
         x = 1
         a += 1
         while x <= len(string):
-            times = "0.1"
+            times = "0.01"
             times += str(random.choice(range(1, 3)))
             sys.stdout.write("\r "+string[:x]+">")
             time.sleep(float(times))
