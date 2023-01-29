@@ -284,7 +284,7 @@ def report(url,port):
             sleep(0.2)
             report(url,port)
 system('clear')
-# verCheck()
+verCheck()
 system('termux-open https://github.com/404-ghost/symbiote &>/dev/null')
 system("git pull --quiet") 
 sleep(1)
