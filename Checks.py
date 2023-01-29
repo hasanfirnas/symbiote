@@ -26,7 +26,6 @@ def verCheck():
     #system('clear')
     print("\n{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
     response = requests.get('https://raw.githubusercontent.com/hasanfirnas/symbiote/master/version.txt')
-    print(response.text.strip())
     with open("version.txt", "r") as f:
         local_version = f.read().strip()
     if local_version[0] == response:
