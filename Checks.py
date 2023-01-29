@@ -28,8 +28,8 @@ def verCheck():
     response = requests.get('https://raw.githubusercontent.com/hasanfirnas/symbiote/master/version.txt').text
     with open("version.txt", "r") as f:
         local_version = f.read().split('\n')
-        print(local_version[0])
-        print(response)
+        print(type(local_version[0]))
+        print(type(response))
     if local_version[0] == response:
         print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, response))
         # system('git fetch --quiet; git reset --hard origin/master --quiet; git pull --quiet')
