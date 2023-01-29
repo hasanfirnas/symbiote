@@ -6,9 +6,10 @@
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
 </p>
 
-# AVAILABLE TUNNELLING OPTIONS**
-1) LOCALXPOSE (https://localxpose.io)
-2) NGROK (https://ngrok.com/)
+# **AVAILABLE TUNNELLING OPTIONS**
+1) NGROK (https://ngrok.com)
+2) Localhost.run (http://localhost.run)
+3) LOCALXPOSE (https://localxpose.io)
 # Installing (Kali Linux/Termux):
 ## step 1 (install this before you start):
 ```
