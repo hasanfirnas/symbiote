@@ -163,7 +163,7 @@ def checkLocalxpose():
         print(' {0}[{2}*{0}]{2} Downloading Localxpose...{5}'.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
         if 'Android' in str(check_output(('uname', '-a'))) or 'arm' in str(check_output(('uname', '-a'))):
             filename = 'loclx-linux-arm.zip'
-            url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
+            url = 'https://api.localxpose.io/api/v2/downloads/'+filename
             req=system('wget {0}'.format(url))
             #with open("{0}", "wb".format(filename)) as file_obj:
             #file_obj.write(req.content)
@@ -178,7 +178,7 @@ def checkLocalxpose():
                 filename = 'loclx-linux-amd64.zip'.format(ostype)
             else:
                 filename = 'loclx-linux-386.zip'.format(ostype)
-        url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
+        url = 'https://api.localxpose.io/api/v2/downloads/'+filename
         req=system('wget {0}'.format(url))
         system('unzip {0} && rm {0}'.format(filename))
         system('mv loclx Server/')
@@ -204,7 +204,7 @@ def loadingHack():
             else:
                 r = ""
             sys.stdout.write('\r'+chainehack+r)
-            time.sleep(0.06)
+            time.sleep(0.006)
 
 def loadingTextPrint():
     string ="                    "+"[*]"+" Starting symbiote......"
@@ -215,7 +215,7 @@ def loadingTextPrint():
         x = 1
         a += 1
         while x <= len(string):
-            times = "0.1"
+            times = "0.01"
             times += str(random.choice(range(1, 3)))
             sys.stdout.write("\r "+string[:x]+">")
             time.sleep(float(times))
