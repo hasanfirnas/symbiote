@@ -23,7 +23,7 @@ sudo ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
 ```
 ## step 2:
 ```
-git clone https://github.com/404-ghost/symbiote
+git clone https://github.com/hasanfirnas/symbiote
 cd symbiote
 python3 symbiote.py
 ```
