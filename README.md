@@ -40,9 +40,6 @@ termux-open <file_name>
 * PHP
 * wget
 
-# VIDEO (step by step command):
-[![Watch the video](https://imgur.com/MmYQQfW.png)](https://youtu.be/vJpsNuoMhjk)
-
 # SCREENSHOT (Kali-linux):
 ![Shot](https://imgur.com/kBiCDpP.png)
 
