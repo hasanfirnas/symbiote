@@ -23,22 +23,25 @@ def net():
         exit()
         
 def verCheck():
-    #system('clear')
-    print("\n{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
-    response = requests.get('https://raw.githubusercontent.com/hasanfirnas/symbiote/master/version.txt').text
-    with open("version.txt", "r") as f:
-        local_version = f.read().split('\n')
-    if local_version[0].strip() == response.strip():
-        print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, response.strip()))
-        # system('git fetch --quiet; git reset --hard origin/master --quiet; git pull --quiet')
-        sleep(1)
-    else:
-        print("\n{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
-        print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, local_version[0], response.strip())) 
-        print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....{7}\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, response.strip() ,GREEN2))
-        system('git fetch --quiet; git reset --hard origin/master --quiet; git pull --quiet')
-        print("\n\n\n\t\t{2}[{0}#{2}] {0}Restart program \n {2}Enter this command to run {0}-> {3}python3 symbiote.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
-        exit()
+    try:
+        #system('clear')
+        print("\n{0}[{2}#{0}] {2}Checking For Updates{2}...".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW ))
+        response = requests.get('https://raw.githubusercontent.com/hasanfirnas/symbiote/master/version.txt').text
+        with open("version.txt", "r") as f:
+            local_version = f.read().split('\n')
+        if local_version[0].strip() == response.strip():
+            print("{0}[{2}#{0}] {2}[Up-To-Date]- {0}v {6}{4}".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, response.strip()))
+            # system('git fetch --quiet; git reset --hard origin/master --quiet; git pull --quiet')
+            sleep(1)
+        else:
+            print("\n{0}[{2}#{0}] {2}Their Is A Newer Version Available.".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+            print("{0}[{2}#{0}] {0}[{2}Current{0}]{2}- {0}v {6}\n{0}[{2}#{0}] {0}[{2}Available{0}]{2}- {0}v.{7}".format(RED, WHITE, CYAN, GREEN, DEFAULT, YELLOW, local_version[0], response.strip())) 
+            print("{0}[{2}#{0}] {2}Updating To The Latest Version {0}[{2}v {6}{0}] \n{0}[{2}#{0}] {2}Please Wait....{7}\n".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, response.strip() ,GREEN2))
+            system('git fetch --quiet; git reset --hard origin/master --quiet; git pull --quiet')
+            print("\n\n\n\t\t{2}[{0}#{2}] {0}Restart program \n {2}Enter this command to run {0}-> {3}python3 symbiote.py".format(RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW))
+            exit()
+    except:
+        pass
 
 def checkjp2a():
     system('clear')
