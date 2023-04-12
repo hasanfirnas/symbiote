@@ -140,8 +140,10 @@ def android_banner():
                                                     {7}==================={4}
               {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
            {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas{4}
+    
+  {7}"Yes, I made this banner when I was 16 - a masterpiece of bad taste.😅"{4}
 '''.format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
-    print("{7}----------------------------------------------------------------------{5}".format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
+    print("{7}------------------------------------------------------------------------{5}".format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
     #loadingTextPrint()
     # loadingHack()
 def sbanner():
@@ -162,6 +164,8 @@ def sbanner():
                                                {7}==================={4}        
            {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}               
        {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas{4}
+  
+  {7}"Yes, I made this banner when I was 16 - a masterpiece of bad taste.😅"{4}
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2,YELLOW2,lred,lyellow))
 def end():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;91m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
@@ -252,6 +256,7 @@ def android_end():
     {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
 
                  {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
+              {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas
 
-              {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas 
+   {7}"Yes, I made this banner when I was 16 - a masterpiece of bad taste.😅"{4}
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2))
