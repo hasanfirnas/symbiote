@@ -42,10 +42,3 @@ termux-open <file_name>
 
 # SCREENSHOT (Kali-linux):
 ![Shot](https://imgur.com/kBiCDpP.png)
-
-# SCREENSHOT (android-termux):
-![Shot](https://imgur.com/qpTDw8n.png)
-
-
-
-
