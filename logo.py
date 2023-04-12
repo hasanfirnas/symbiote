@@ -63,7 +63,7 @@ def banner():
                    ;MMMMMMx{5}{1}"    "{4}kWWWO{5}{1}"    "{4}MMMMMWMM,             {6}|{4}           
                    .MNMMMMMKd{5}{1}".."{4}0WWXl{5}{1},..,"{4}lOWMMMWM.              {6}|{4}           
                     XlNMMMMMMMMWWWWxKWMWWMMMMMMMMWdK              {6}|{4}
-                    ..:koXMMMMMWWMOdkoMWWMMMMMWxN:..              {6}|{4}           
+                    ..:koXMMMMMWWMOdkoMWWMMMMMWxN:..              {6}|{4}           {7}"Yes, I made that skeleton banner when I was 16 - a masterpiece of bad taste.😅"{4}
                          KMMMWddWW0XWxWWWXooWMW x                 {6}|{4}     
                          xMMNl{0}",{4}WWWWWWWWW{0},"{4}lWWW: {5}'\'{4}               {6}|{4}     
                           lXMM{0};;{4}WWWWWWWWM{0};;{4}WMMk{5}.|.{4}                {6}|{4}     
@@ -89,7 +89,6 @@ def android_banner():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2, BRED= '\033[91m', '\033[46m', '\033[36m', '\033[1;91m', '\033[0m' , '\033[1;32m' , '\033[1;93m', '\033[1;92m',"\033[5;35m"
     BLINK ,Magenta ="\033[5m","\033[1;34m"
     y='\033[1;33m'
-    system('clear')
     print('''
                                 {5}...      
                            {5}.ckXWMMMMWKx:  
@@ -167,7 +166,6 @@ def sbanner():
 def end():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;91m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
     blink='\033[5m'
-    
     print('''{2}
                                                                                            
                                                                                               {5}|{4} 
@@ -186,13 +184,13 @@ def end():
                             {2}.KMMMMMX; .';:cc:;,..{4}                                             {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}WE WILL NOT BE RESPONSIBLE FOR ANY MISUSE OF THIS TOOL.  
                            {2}.XMMMMMWkOXWMMMMMMMMMWXOo;.{4}                                        {5}|{4}                      {0}[[{6}{2}*{4}{0}]] {7}THANKS FOR USE THIS TOOL. {0}"HAPPY HACKING ... GOOD BYE" {4}
                           {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMW0o'{4}                                     {5}|{4}                       
-                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                                   {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
+                         {2}'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM0;{4}                                   {5}|{4}                              {7}GitHub Profile{6}{0} : {4}{5}https://github.com/hasanfirnas{4}
                         {2},NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO,{4}                                 {5}|{4}                                  
-                       {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                                {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas
+                       {2}lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO'{4}                               {5}|{4}                           {7}LinkedIn Profile{6}{0} : {4}{5}https://www.linkedin.com/in/hasan-firnas
                      {2},0MMMMMMMMMMMMMMMWXOkxMMkllllodxOMMMMMMMMWd.{4}                             {5}|{4}
             {2}.dc;'';lOWMMMMMMMMMMMMMMMc.   {6}{0}.WM,{4}      {2};KMMMMMMMMMMK'{4}                            {5}|{4}        
              {2}cWMMMMMMMMMMMMMMMMM0c,{6}{0}WMo    oMW.{4}     {2}dWMMMMMMN0OOOKK,{4}                           {5}|{4}
-              {2}:NMMMMMMMMMMMMMMMx   {6}{0}xMWo..oWMd{4}    {2}.0MMMMMWk,{4}                                   {5}|{4}           
+              {2}:NMMMMMMMMMMMMMMMx   {6}{0}xMWo..oWMd{4}    {2}.0MMMMMWk,{4}                                   {5}|{4}                   {7}"Yes, I made this banner when I was 16 - a masterpiece of bad taste.😅"{4}
                {2}.xWMMMMMMMMMMMMMO   {6}{0}.XMMWMMMX.{4}    {2}OMMMMMN;{4}                                     {5}|{4}           
                  {2}.cxKNNNKkldMMMW'   {6}{0}.0MMMM0.{4}    {2}dMMMMMK.{4}                                      {5}|{4}           
                             {2}xMMMK.    {6}{0}'cc'{4}     {2}dMMMMM0.{4}                                       {5}|{4}           
@@ -209,7 +207,7 @@ def end():
                                                                                               {5}|{4}
                                                                                               {5}|{4}                  
 '''.format(RED, WHITE, CYAN, GREEN, DEFAULT ,YELLOW,blink,GREEN2))
-
+    
 def android_end():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;91m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
     blink='\033[5m'
