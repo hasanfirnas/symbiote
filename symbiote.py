@@ -284,7 +284,7 @@ def report(url,port):
             report(url,port)
 system('clear')
 verCheck()
-system('termux-open https://github.com/404-ghost/symbiote &>/dev/null')
+system('termux-open https://github.com/hasanfirnas/symbiote &>/dev/null')
 sleep(1)
 menu_q()
 global kill
