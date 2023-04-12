@@ -40,7 +40,7 @@ def banner():
     BLINK ,Magenta ="\033[5m","\033[1;34m"
     y='\033[1;33m'
     system('clear')
-    loadingTextPrint()
+    # loadingTextPrint()
     system('clear')
     print('''
 
@@ -144,7 +144,7 @@ def android_banner():
 '''.format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
     print("{7}----------------------------------------------------------------------{5}".format(RED, BRED, CYAN, GREEN, DEFAULT ,YELLOW,Magenta,y))
     #loadingTextPrint()
-    loadingHack()
+    # loadingHack()
 def sbanner():
     RED, WHITE, CYAN, GREEN, DEFAULT , YELLOW, YELLOW2, GREEN2= '\033[1;31m', '\033[46m', '\033[1;36m', '\033[1;32m', '\033[0m' , '\033[1;33m' , '\033[1;93m', '\033[1;92m'
     lred,blink,lyellow="\033[91m",'\033[5m',"\033[93m"
