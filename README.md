@@ -1,7 +1,3 @@
-
-
-
-
 <p align="center">
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
 </p>
@@ -45,4 +41,4 @@ termux-open <file_name>
 * wget
 
 # SCREENSHOT (Kali-linux):
-![Shot](https://imgur.com/kBiCDpP.png)
+![Shot](https://i.imgur.com/PP51q6i.jpeg)
