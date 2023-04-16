@@ -21,7 +21,7 @@ sudo apt update && upgrade
 sudo apt install python -y
 sudo apt install wget -y
 sudo apt install php -y
-sudo apt install openssh -y
+sudo apt install openssh-client -y
 sudo apt install jq -y
 sudo ssh-keygen -q -t rsa -N '' -f ~/.ssh/id_rsa <<<y >/dev/null 2>&1
 ```
