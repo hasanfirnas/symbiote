@@ -1,5 +1,5 @@
 <p align="center">
-  #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
+  <b>#TO BE USED FOR EDUCATIONAL PURPOSES ONLY#<b>
 </p>
 
 <p align="center">
