@@ -6,6 +6,10 @@
   #TO BE USED FOR EDUCATIONAL PURPOSES ONLY#
 </p>
 
+<p align="center">
+Symbiote is a social engineering tool designed to create a phishing page and capture webcam images. By requesting camera permission on the victim's device, this script can take pictures covertly. If you're interested in contributing to the project, we'd love to have you on board.
+</p>
+
 # **AVAILABLE TUNNELLING OPTIONS**
 1) NGROK [ACCOUNT NEEDED] (https://ngrok.com)
 2) Localhost.run (http://localhost.run)
