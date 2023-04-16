@@ -42,3 +42,6 @@ termux-open <file_name>
 
 # SCREENSHOT (Kali-linux):
 ![Shot](https://i.imgur.com/PP51q6i.jpeg)
+
+# VIDEO (step by step command):
+[![Watch the video](https://i.imgur.com/PP51q6i.jpeg)](https://youtu.be/j8rTc3CI7UA)
